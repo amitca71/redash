@@ -173,6 +173,9 @@ export default function initMap(container: any) {
   const _tileLayer = L.tileLayer("//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   }).addTo(_map);
+  const _tileLayersea= L.tileLayer("//tiles.openseamap.org/seamark/{z}/{x}/{y}.png", {
+    attribution: '&copy; <a href="https://www.openseamap.org">OpenSeaMap</a> contributors',
+  }).addTo(_map);
   const _markerLayers = L.featureGroup().addTo(_map);
   const _layersControls = L.control.layers().addTo(_map);
 
